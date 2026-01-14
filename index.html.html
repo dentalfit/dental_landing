@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>단톡방 링크 무료로 받기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: -0.5px;
+        }
+
+        .content {
+            padding: 60px 40px;
+        }
+
+        .benefits {
+            margin-bottom: 50px;
+        }
+
+        .benefit-item {
+            font-size: 20px;
+            margin-bottom: 25px;
+            padding-left: 10px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #0066ff;
+        }
+
+        .description {
+            margin: 40px 0;
+            font-size: 16px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .form-container {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 40px 0;
+            background-color: #fafafa;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            transition: border-color 0.3s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #0066ff;
+        }
+
+        .privacy-consent {
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+            font-size: 15px;
+            color: #666;
+        }
+
+        .privacy-consent input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .privacy-link {
+            color: #0066ff;
+            text-decoration: none;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .privacy-link:hover {
+            text-decoration: underline;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(135deg, #0066ff 0%, #0052cc 100%);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 102, 255, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .submit-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .footer-note {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-size: 15px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .footer-note strong {
+            color: #333;
+        }
+
+        .kakao-note {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #856404;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                font-size: 22px;
+                padding: 30px 20px;
+            }
+
+            .content {
+                padding: 40px 20px;
+            }
+
+            .benefit-item {
+                font-size: 18px;
+            }
+
+            .form-container {
+                padding: 25px;
+            }
+        }
+
+        .success-message {
+            display: none;
+            padding: 20px;
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            color: #155724;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            단톡방 링크 무료로 받기
+        </div>
+
+        <div class="content">
+            <div class="benefits">
+                <div class="benefit-item">
+                    1. <span class="highlight">놓치는 부분 없이 치과 마케팅을 스스로 할 수 있도록</span> 도와주는 체크리스트
+                </div>
+                <div class="benefit-item">
+                    2. <span class="highlight">궁금한 부분을 전부 질문</span>할 수 있는 단톡방 링크
+                </div>
+                <div class="benefit-item">
+                    3. <span class="highlight">치과 매출 설계 강의</span>
+                </div>
+                <div class="benefit-item">
+                    4. <span class="highlight">매주 무료특강 참여</span>기회
+                </div>
+            </div>
+
+            <div class="description">
+                위 4가지를 전부 무료로 받고 싶으시다면, 아래에 '<strong>성함 / 전화번호</strong>'를 입력해주시면 됩니다.
+            </div>
+
+            <div class="kakao-note">
+                📱 (카카오톡 / 문자로 위 4가지를 보내드립니다.)
+            </div>
+
+            <div class="form-container">
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label class="form-label" for="name">이름</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="이름을 입력해주세요" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="phone">휴대폰</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="010-1234-5678" required>
+                    </div>
+
+                    <div class="privacy-consent">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">개인정보 수집동의</label>
+                        <a href="#" class="privacy-link" onclick="showPrivacyModal(event)">약관보기</a>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        신청하고, 4가지 선물 받기 (클릭)
+                    </button>
+
+                    <div class="success-message" id="successMessage">
+                        ✅ 신청이 완료되었습니다! 곧 카카오톡으로 안내 메시지가 발송됩니다.
+                    </div>
+                </form>
+            </div>
+
+            <div class="footer-note">
+                <strong>특히, 단톡방에서는 '치과 매출 상승에 도움이 되는 정보들'도 수시로 안내드리고 있지 때문에, 원장님께서 '원장님만의 병원'을 잘 설계해보고 싶으시다면 단톡방에 참여해주시면 됩니다.</strong>
+            </div>
+
+            <div class="kakao-note">
+                💬 (단톡방은 위에서 '<strong>성함 / 전화번호</strong>'를 입력하면 참여하실 수 있습니다.)
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 전화번호 자동 포맷팅
+        document.getElementById('phone').addEventListener('input', function(e) {
+            let value = e.target.value.replace(/[^0-9]/g, '');
+            
+            if (value.length <= 3) {
+                e.target.value = value;
+            } else if (value.length <= 7) {
+                e.target.value = value.slice(0, 3) + '-' + value.slice(3);
+            } else if (value.length <= 11) {
+                e.target.value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7);
+            } else {
+                e.target.value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
+            }
+        });
+
+        // 폼 제출 처리
+        document.getElementById('leadForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const privacy = document.getElementById('privacy').checked;
+
+            if (!privacy) {
+                alert('개인정보 수집에 동의해주세요.');
+                return;
+            }
+
+            const submitBtn = e.target.querySelector('.submit-btn');
+            submitBtn.disabled = true;
+            submitBtn.textContent = '처리 중...';
+
+            try {
+                // Google Sheets로 전송 (나중에 연동)
+                // await sendToGoogleSheets(name, phone);
+
+                // 성공 메시지 표시
+                document.getElementById('successMessage').classList.add('show');
+                
+                // 폼 초기화
+                e.target.reset();
+
+                // 2초 후 감사 페이지로 이동
+                setTimeout(() => {
+                    window.location.href = 'thankyou.html';
+                }, 2000);
+
+            } catch (error) {
+                alert('신청 중 오류가 발생했습니다. 다시 시도해주세요.');
+                console.error('Error:', error);
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = '신청하고, 4가지 선물 받기 (클릭)';
+            }
+        });
+
+        function showPrivacyModal(e) {
+            e.preventDefault();
+            alert('개인정보처리방침:\n\n수집하는 개인정보: 이름, 전화번호\n수집 목적: 마케팅 자료 발송\n보유 기간: 3년\n\n상세한 내용은 홈페이지를 참고해주세요.');
+        }
+    </script>
+</body>
+</html>
