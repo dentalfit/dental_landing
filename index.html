@@ -81,9 +81,18 @@
             submitBtn.disabled = true;
             submitBtn.textContent = '처리 중...';
             try {
-                document.getElementById('successMessage').classList.add('show');
-                e.target.reset();
-                setTimeout(() => { window.location.href = 'thankyou.html'; }, 2000);
+                   await fetch('https://script.google.com/macros/s/AKfycbw7bWcR_WDAt2dVR-YBfNn3e9IfpSYdTk16_WBYxXFC3KgMBfus_-XpocxFFy83cLWj5Q/exec', {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: name, phone: phone })
+    });
+    
+    document.getElementById('successMessage').classList.add('show');
+    e.target.reset();
+    setTimeout(() => { window.location.href = 'thankyou.html'; }, 2000);
+              
+              
             } catch (error) {
                 alert('신청 중 오류가 발생했습니다.');
             } finally {
